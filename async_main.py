@@ -21,7 +21,6 @@ async def uploader(session, link, query, num):
     underscore_query = re.sub("\s", "_", query)
     path = f'./async_all_pictures/catalog_{underscore_query}_pictures'
 
-
     # делаем запрос на страницу с картинкой
     tries_count = 1
     while tries_count <= 3:
